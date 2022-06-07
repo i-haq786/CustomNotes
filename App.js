@@ -4,18 +4,19 @@ import { StyleSheet, Text, View } from 'react-native';
 import { useEffect } from 'react/cjs/react.production.min';
 import Intro from './Code/Screens/intro';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import NoteScreen from './Code/Screens/NoteScreen';
 
 export default function App() {
-   const findUser = async () => {
-      const result = await AsyncStorage.getItem('user');
-      console.log(result);
-    };
+   // const findUser = async () => {
+   //    const result = await AsyncStorage.getItem('user');
+   //    console.log(result);
+   //  }; 
 
-    useEffect (() => {
-      findUser();
-    }, []);
+   //  useEffect (() => {
+   //    findUser();
+   //  }, []);
 
- return <Intro /> ;
+ return <NoteScreen /> ;
 }
 
 const styles = StyleSheet.create({

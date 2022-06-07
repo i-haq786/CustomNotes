@@ -4,4 +4,4 @@ export default{
         BGC:'#f18a85',
         PRIMARY: '#24788f',
         Alter:'#472731',
-};
+}; 

@@ -6,7 +6,7 @@ import RoundIconBtn from '../components/RoundIconBtn';
 import colors from '../misc/colors';
 //import { useState } from 'react/cjs/react.production.min';
 //import StepForwardOutlined, { RightCircleFilled } from '@ant-design/icons';
-
+ 
 const Intro= () => {
         const[name,setName]=useState('');
         const handleOnChangeText= text => setName (text);
@@ -21,9 +21,8 @@ const Intro= () => {
         <StatusBar hidden />
         <View style={styles.container}>
             <Text style={styles.inputTitle} > Enter Your Name to Continue...</Text>
-            
             <TextInput 
-            value={name} 
+            value={name}  
             onChangeText={handleOnChangeText} 
             placeholder='E.g: Inzamam-ul-Haq' 
             style={styles.textInput} 
